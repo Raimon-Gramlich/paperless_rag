@@ -4,6 +4,7 @@ import chromadb
 from rag_chain import VectorDBInterface
 
 class ChromaAdapter(VectorDBInterface):
+    """Adapter for the ChromaDB client to provide a unified interface for vector databases."""
     def __init__(self, path: str = "./chroma_db"):
         self.client = chromadb.PersistentClient(path=path)
 

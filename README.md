@@ -30,6 +30,8 @@ Things you need to make use of the project:
 
 * Have a running instance of [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx)
   * requires a user configured for api access with permissions to view documents, document types, and tags that should be ingested by the RAG system
+* (Optional) Have a running [Qdrant]([github.com/qdrant/qdrant](https://github.com/qdrant/qdrant)) instance
+  * can use a built-in ChromaDB instead
 * [uv]([docs.astral.sh/uv](https://docs.astral.sh/uv/)) python package manager installed
 * Access to the following models served over an OpenAI-compatible API
   * embedding model
